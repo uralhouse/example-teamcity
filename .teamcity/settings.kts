@@ -44,6 +44,8 @@ object ExampleTeamcity : Project({
 object ExampleTeamcity_Build : BuildType({
     name = "Build"
 
+    artifactRules = "target/*.jar"
+
     vcs {
         root(ExampleTeamcity_HttpsGithubComUralhouseExampleTeamcityGitRefsHeadsMaster)
     }
